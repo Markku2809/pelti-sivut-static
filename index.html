@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IV-kanavat ja peltityöt – Yrityksesi nimi</title>
+  <meta name="description" content="IV-kanavat, peltiosat ja asennukset. Nopea toimitus ja kotimainen laatu." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#">Yrityksesi nimi</a>
+      <button class="menu-btn" aria-label="Avaa valikko" onclick="toggleMenu()">☰</button>
+      <nav id="mainnav">
+        <a href="#palvelut">Palvelut</a>
+        <a href="#tuotteet">Tuotteet</a>
+        <a href="#referenssit">Referenssit</a>
+        <a href="#yhteys">Yhteystiedot</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>IV-kanavat ja peltiosat – nopeasti ja tarkasti</h1>
+      <p>Valmistamme ja toimitamme ilmanvaihdon kanavat ja peltiosat mittojen mukaan. Ota yhteyttä ja pyydä tarjous!</p>
+      <a class="btn" href="#yhteys">Pyydä tarjous</a>
+    </div>
+  </section>
+
+  <section id="palvelut" class="section">
+    <div class="wrap">
+      <h2>Palvelut</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>Kanavien valmistus</h3>
+          <p>Pyöreät ja kanttikanavat, osat ja liittimet – sarja- ja yksittäiskappaleet.</p>
+        </article>
+        <article class="card">
+          <h3>Erikoisosat mittojen mukaan</h3>
+          <p>Supistukset, kulmat, T-kappaleet, siirrot, läpiviennit – piirustuksen tai mitan mukaan.</p>
+        </article>
+        <article class="card">
+          <h3>Asennus & toimitus</h3>
+          <p>Nopeat toimitukset työmaille. Sovittaessa myös asennus.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tuotteet" class="section alt">
+    <div class="wrap">
+      <h2>Tuotteet</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>BKR – Reduktio (horisontaalinen)</h3>
+          <p>Supistukset eri halkaisijoihin. Vakio ja erikoismitat.</p>
+        </article>
+        <article class="card">
+          <h3>BKV – Reduktio (vertikaalinen)</h3>
+          <p>Pystysupistukset, sileä siirtymä – hyvä virtaus.</p>
+        </article>
+        <article class="card">
+          <h3>BKP – Kulma 90°</h3>
+          <p>Tiiviit kulmat tiivisteellä tai ilman. Saatavana eri säteillä.</p>
+        </article>
+        <article class="card">
+          <h3>BKY – T-kappale</h3>
+          <p>T-haarat, haarakulma valittavissa. Myös supistavat haarat.</p>
+        </article>
+        <article class="card">
+          <h3>BSV – Säätöpelti</h3>
+          <p>Peltipellit ja kuristusventtiilit ilmavirran säätöön.</p>
+        </article>
+        <article class="card">
+          <h3>Päätelaitteet</h3>
+          <p>Ristikot, venttiilit ja suodatinlaatikot – asennusvalmiina.</p>
+        </article>
+      </div>
+      <p class="hint">Tarvitsetko erikoisosan? <a href="#yhteys">Kysy mittojen mukaan</a>.</p>
+    </div>
+  </section>
+
+  <section id="referenssit" class="section">
+    <div class="wrap">
+      <h2>Referenssit</h2>
+      <ul class="refs">
+        <li>Asuinkerrostalo, Helsinki – kanavatoimitus (2024)</li>
+        <li>Teollisuushalli, Lahti – erikoisosat (2025)</li>
+        <li>Koulu, Tampere – kattavat peltityöt (2025)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="yhteys" class="section alt">
+    <div class="wrap">
+      <h2>Yhteystiedot</h2>
+      <div class="grid two">
+        <div>
+          <p><strong>Yrityksesi nimi</strong><br>
+          <!-- VAIHDA TIEDOT: -->
+          Peltikatu 1, 00100 Helsinki<br>
+          puh. <a href="tel:+358401234567">040 123 4567</a><br>
+          sähköposti <a href="mailto:info@yrityksesi.fi">info@yrityksesi.fi</a></p>
+          <p>Avoinna: ma–pe 7–16</p>
+        </div>
+        <form class="contact" onsubmit="sendMessage(event)">
+          <label>Nimi
+            <input required type="text" name="name" />
+          </label>
+          <label>Sähköposti
+            <input required type="email" name="email" />
+          </label>
+          <label>Viesti
+            <textarea required name="message" rows="5"></textarea>
+          </label>
+          <button class="btn" type="submit">Lähetä</button>
+          <p id="ok" class="ok" hidden>Kiitos! Viestisi on lähetetty.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Yrityksesi nimi — Kaikki oikeudet pidätetään.</p>
+      <a href="#top" class="top">Ylös ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
